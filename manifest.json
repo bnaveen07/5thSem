@@ -1,0 +1,40 @@
+{
+  "name": "ECE - 5th Sem | DSCE",
+  "short_name": "ECE | DSCE",
+  "display": "standalone",
+  "scope": "/",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "background_color": "#fff",
+  "theme_color": "#3f51b5",
+  "description": "A Simple website to access PDFs of 5th Sem of DSCE.",
+  "dir": "ltr",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "./img/icons/app-icon-96x96.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/app-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/app-icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/app-icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/app-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ece dsce",
+  "version": "1.0.0",
+  "description": "Website to access to all study materials at one place. DSCE",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app",
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Naveen Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.6"
+  }
+}
