@@ -30,7 +30,7 @@ hamburger.addEventListener('click', () => {
 
 //   if (count < 2) {
 //     if (deferredPrompt) {
-//       deferredPrompt.prompt();
+      deferredPrompt.prompt();
 //     }
 //     if (count == 4) {
 //       deferredPrompt = null;
