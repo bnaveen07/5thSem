@@ -28,15 +28,14 @@ hamburger.addEventListener('click', () => {
     link.classList.toggle("fade");
   });
 
-  //   if (count < 2) {
-  //     if (deferredPrompt) {
-  //       deferredPrompt.prompt();
-  //     }
-  //     if (count == 4) {
-  //       deferredPrompt = null;
-  //     }
-  //     count++;
-  //   }
+   if (deferredPrompt) {
+      if(count == 0 || count % 2 == 0){
+      deferredPrompt.prompt();
+    }
+    }
+    count++;
+  
+
 
 
   //Hamburger Animation
