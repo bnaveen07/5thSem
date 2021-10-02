@@ -1,7 +1,7 @@
 `use strict`
 
 var deferredPrompt;
-// var count;
+var count =0;
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
@@ -28,15 +28,14 @@ hamburger.addEventListener('click', () => {
     link.classList.toggle("fade");
   });
 
-//   if (count < 2) {
-//     if (deferredPrompt) {
+  if (count < 2) {
+    if (deferredPrompt) {
+      if(count == 0 || count % 2 == 0){
       deferredPrompt.prompt();
-//     }
-//     if (count == 4) {
-//       deferredPrompt = null;
-//     }
-//     count++;
-//   }
+    }
+    }
+    count++;
+  }
 
 
   //Hamburger Animation
