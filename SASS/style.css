@@ -55,6 +55,21 @@
   font-weight: 300;
 }
 
+::-moz-selection {
+  background-color: #bb86fc;
+  color: #fff;
+}
+
+::selection {
+  background-color: #bb86fc;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  color: #bb86fc;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -71,6 +86,7 @@ nav {
 }
 
 .home {
+  cursor: pointer;
   text-decoration: none;
 }
 

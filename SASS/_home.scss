@@ -6,6 +6,16 @@
   letter-spacing: 1px;
   font-weight: 300;
 }
+
+::selection {
+  background-color: #bb86fc;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  color: #bb86fc;
+}
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
