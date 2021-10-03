@@ -70,6 +70,14 @@ nav {
   font-family: "DotGothic16", sans-serif;
 }
 
+.home {
+  text-decoration: none;
+}
+
+.home:hover {
+  color: #61dafb;
+}
+
 .navbar {
   height: 4rem;
   width: 100vw;

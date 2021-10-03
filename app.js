@@ -1,13 +1,13 @@
 `use strict`
 
 var deferredPrompt;
-var count =0;
+var count = 0;
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./sw.js')
     .then(function () {
-      alert("Hurray! You have successfully downladed");
+
     });
 }
 
@@ -29,14 +29,14 @@ hamburger.addEventListener('click', () => {
     link.classList.toggle("fade");
   });
 
-  
-    if (deferredPrompt) {
-      if(count == 0 || count % 2 == 0){
+
+  if (deferredPrompt) {
+    if (count == 0 || count % 2 == 0) {
       deferredPrompt.prompt();
     }
-    }
-    count++;
-  
+  }
+  count++;
+
 
 
   //Hamburger Animation
