@@ -56,7 +56,7 @@
 }
 
 body {
-  font-family: "DotGothic16", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   position: relative;
   background-color: #121212;
@@ -271,6 +271,8 @@ section {
   width: 330px;
   height: 450px;
   margin: 20px;
+  padding-top: 2rem;
+  text-align: center;
   background-color: #1f1b24;
   -webkit-box-shadow: 2px 2px 5px white;
           box-shadow: 2px 2px 5px white;
@@ -310,38 +312,30 @@ section {
   top: -16px;
   right: -16px;
   background: #00838d;
-  height: 82px;
-  width: 82px;
+  height: 60px;
+  width: 60px;
   border-radius: 60%;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  transition: all 02s ease-out;
-  -webkit-transition: all 02s ease-out;
-  -moz-transition: all 02s ease-out;
-  -ms-transition: all 02s ease-out;
-  -o-transition: all 02s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -ms-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
   -webkit-border-radius: 60%;
   -moz-border-radius: 60%;
   -ms-border-radius: 60%;
   -o-border-radius: 60%;
 }
 
-.card:hover {
-  transform: scale(1.025);
-  -webkit-transform: scale(1.025);
-  -moz-transform: scale(1.025);
-  -ms-transform: scale(1.025);
-  -o-transform: scale(1.025);
-}
-
 .card:hover:before {
-  transform: scale(14);
-  -webkit-transform: scale(14);
-  -moz-transform: scale(14);
-  -ms-transform: scale(14);
-  -o-transform: scale(14);
+  transform: scale(25);
+  -webkit-transform: scale(25);
+  -moz-transform: scale(25);
+  -ms-transform: scale(25);
+  -o-transform: scale(25);
 }
 
 .card:hover h2 {
@@ -352,9 +346,18 @@ section {
   color: #f2f8f9;
 }
 
+.card:hover {
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -o-transform: scale(1.025);
+}
+
 .card h2 {
   color: #00838d;
-  padding: 1rem 0 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .card p {
