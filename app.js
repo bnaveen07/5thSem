@@ -7,6 +7,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./sw.js')
     .then(function () {
+      alert("Hurray! You have successfully downladed");
     });
 }
 
@@ -41,3 +42,4 @@ hamburger.addEventListener('click', () => {
   //Hamburger Animation
   hamburger.classList.toggle("toggle");
 });
+
