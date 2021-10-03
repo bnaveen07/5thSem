@@ -7,7 +7,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./sw.js')
     .then(function () {
-      alert("Hurray! You have successfully downladed");
+//       alert("Hurray! You have successfully downladed");
     });
 }
 
