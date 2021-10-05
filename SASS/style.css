@@ -86,12 +86,13 @@ nav {
 }
 
 .home {
+  color: #00838d;
   cursor: pointer;
   text-decoration: none;
 }
 
 .home:hover {
-  color: #61dafb;
+  color: #bb86fc;
 }
 
 .navbar {
@@ -146,11 +147,11 @@ nav {
 }
 
 .nav-links li a:hover {
-  color: #61dafb;
+  color: #bb86fc;
 }
 
 .nav-links li a:active {
-  color: #61dafb;
+  color: #bb86fc;
 }
 
 .nav-links li {
