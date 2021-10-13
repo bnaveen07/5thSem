@@ -68,6 +68,8 @@
 ::-webkit-scrollbar {
   width: 4px;
   color: #bb86fc;
+  -webkit-box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
+          box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
 }
 
 body {
@@ -75,6 +77,48 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212;
+}
+
+footer {
+  height: 10vh;
+  background-color: #121212;
+  -webkit-box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
+          box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  font-size: 1rem;
+  line-height: 15px;
+  margin-left: 1rem;
+  color: #bb86fc;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+footer a:hover,
+footer a:active {
+  transform: scaleX(1.2);
+  color: #03dac5;
+  -webkit-transform: scaleX(1.2);
+  -moz-transform: scaleX(1.2);
+  -ms-transform: scaleX(1.2);
+  -o-transform: scaleX(1.2);
 }
 
 nav {
