@@ -69,7 +69,7 @@
   width: 4px;
   color: #bb86fc;
   -webkit-box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
-          box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
+  box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
 }
 
 body {
@@ -83,16 +83,16 @@ footer {
   height: 10vh;
   background-color: #121212;
   -webkit-box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
-          box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
+  box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer a {
@@ -144,17 +144,17 @@ nav {
   width: 100vw;
   background-color: #1f1b24;
   -webkit-box-shadow: 0 3px 8px rgba(209, 202, 202, 0.877);
-          box-shadow: 0 3px 8px rgba(209, 202, 202, 0.877);
+  box-shadow: 0 3px 8px rgba(209, 202, 202, 0.877);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: fixed;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 10;
   color: #fff;
   overflow: hidden;
@@ -177,11 +177,11 @@ nav {
   list-style: none;
   width: 88vw;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -227,7 +227,7 @@ nav {
   .navbar {
     z-index: 3;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .hamburger {
     display: block;
@@ -236,7 +236,7 @@ nav {
     right: 5%;
     top: 50%;
     -webkit-transform: translate(-5%, -50%);
-            transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
     z-index: 2;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
@@ -244,17 +244,17 @@ nav {
   .nav-links {
     position: fixed;
     background: #121212;
-    top: 10vh;
+    top: 9vh;
     left: 0;
     height: 91vh;
     width: 100%;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
     -webkit-transition: all 1s ease-out;
@@ -307,7 +307,7 @@ nav {
 /*Animating Hamburger Icon on Click*/
 .toggle .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -318,7 +318,7 @@ nav {
 
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 section {
@@ -327,13 +327,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card {
@@ -344,7 +344,7 @@ section {
   text-align: center;
   background-color: #1f1b24;
   -webkit-box-shadow: 2px 2px 5px white;
-          box-shadow: 2px 2px 5px white;
+  box-shadow: 2px 2px 5px white;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -361,11 +361,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #2b2828;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -385,9 +385,9 @@ section {
   width: 60px;
   border-radius: 60%;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   transition: all 1.5s ease-out;
   -webkit-transition: all 1.5s ease-out;
   -moz-transition: all 1.5s ease-out;
@@ -438,14 +438,21 @@ button {
   padding: 12px 48px;
   color: #bb86fc;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #00838d), color-stop(20%, white), color-stop(40%, #4d4d4d));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #00838d),
+    color-stop(20%, white),
+    color-stop(40%, #4d4d4d)
+  );
   background: linear-gradient(to right, #00838d 0, white 20%, #4d4d4d 40%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 1.5s infinite linear;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 600;
   font-size: 16px;
@@ -476,4 +483,64 @@ button a::after {
   animation: borderLength 1s infinite linear;
   -webkit-animation: borderLength 1.5s infinite linear;
 }
-/*# sourceMappingURL=style.css.map */
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid red;
+}
