@@ -191,7 +191,7 @@ nav {
 }
 
 .nav-links li a:hover {
-  color: #bb86fc;
+  color: #03dac5;
 }
 
 .nav-links li a:active {
@@ -243,8 +243,8 @@ nav {
   }
   .nav-links {
     position: fixed;
-    background: #6531a5;
-    top: 9vh;
+    background: #121212;
+    top: 10vh;
     left: 0;
     height: 91vh;
     width: 100%;
