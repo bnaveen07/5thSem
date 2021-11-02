@@ -52,3 +52,20 @@
     opacity: 0;
   }
 }
+@keyframes blinkTextCursor {
+  0%,
+  100% {
+    border-right: transparent;
+  }
+  99% {
+    border-right: rgba(255, 255, 255, 0.75);
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.5em;
+  }
+}

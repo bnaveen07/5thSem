@@ -46,6 +46,120 @@
   }
 }
 
+@-webkit-keyframes cursorAnim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@-webkit-keyframes cursorAnim2 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+@-webkit-keyframes cursorAnim3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  0%,
+  100% {
+    border-right: transparent;
+  }
+  99% {
+    border-right: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@keyframes blinkTextCursor {
+  0%,
+  100% {
+    border-right: transparent;
+  }
+  99% {
+    border-right: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.5em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.5em;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -69,56 +183,13 @@
   width: 4px;
   color: #bb86fc;
   -webkit-box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
-  box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
+          box-shadow: 2px 2px 4px #999, inset -2px -2px 4px #fff;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   position: relative;
   background-color: #121212;
-}
-
-footer {
-  height: 10vh;
-  background-color: #121212;
-  -webkit-box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
-  box-shadow: 0 -3px 8px rgba(209, 202, 202, 0.877);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-footer a {
-  font-size: 1rem;
-  line-height: 15px;
-  margin-left: 1rem;
-  color: #bb86fc;
-  text-decoration: none;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transition: transform 0.3s ease;
-  -moz-transition: transform 0.3s ease;
-  -ms-transition: transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
-}
-
-footer a:hover,
-footer a:active {
-  transform: scaleX(1.2);
-  color: #03dac5;
-  -webkit-transform: scaleX(1.2);
-  -moz-transform: scaleX(1.2);
-  -ms-transform: scaleX(1.2);
-  -o-transform: scaleX(1.2);
 }
 
 nav {
@@ -126,7 +197,6 @@ nav {
   height: 4rem;
   width: 100vw;
   font-weight: 500;
-  font-family: "DotGothic16", sans-serif;
 }
 
 .home {
@@ -144,17 +214,17 @@ nav {
   width: 100vw;
   background-color: #1f1b24;
   -webkit-box-shadow: 0 3px 8px rgba(209, 202, 202, 0.877);
-  box-shadow: 0 3px 8px rgba(209, 202, 202, 0.877);
+          box-shadow: 0 3px 8px rgba(209, 202, 202, 0.877);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
   color: #fff;
   overflow: hidden;
@@ -162,11 +232,17 @@ nav {
 
 /*Styling logo*/
 .logo {
-  width: 10rem;
+  width: 11.5rem;
   padding: 1vh 1vw;
   text-align: center;
-  white-space: nowrap;
   color: #bb86fc;
+  border-right: 2px solid rgba(255, 255, 255, 0.61);
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: typewriter 4s steps(20) 0s 1 normal both, blinkTextCursor 500ms steps(20) 1 normal;
+  -webkit-animation: typewriter 4s steps(20) 0s 1 normal both, blinkTextCursor 500ms steps(20) 1 normal;
 }
 
 /*Styling Links*/
@@ -177,11 +253,11 @@ nav {
   list-style: none;
   width: 88vw;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
 
@@ -227,7 +303,7 @@ nav {
   .navbar {
     z-index: 3;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .hamburger {
     display: block;
@@ -236,7 +312,7 @@ nav {
     right: 5%;
     top: 50%;
     -webkit-transform: translate(-5%, -50%);
-    transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
     z-index: 2;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
@@ -249,12 +325,12 @@ nav {
     height: 91vh;
     width: 100%;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
     -webkit-transition: all 1s ease-out;
@@ -307,7 +383,7 @@ nav {
 /*Animating Hamburger Icon on Click*/
 .toggle .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -318,7 +394,7 @@ nav {
 
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
-  transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 section {
@@ -327,13 +403,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card {
@@ -344,7 +420,7 @@ section {
   text-align: center;
   background-color: #1f1b24;
   -webkit-box-shadow: 2px 2px 5px white;
-  box-shadow: 2px 2px 5px white;
+          box-shadow: 2px 2px 5px white;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -361,11 +437,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #2b2828;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -385,9 +461,9 @@ section {
   width: 60px;
   border-radius: 60%;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
   -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   transition: all 1.5s ease-out;
   -webkit-transition: all 1.5s ease-out;
   -moz-transition: all 1.5s ease-out;
@@ -438,21 +514,14 @@ button {
   padding: 12px 48px;
   color: #bb86fc;
   border-radius: 5px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(0, #00838d),
-    color-stop(20%, white),
-    color-stop(40%, #4d4d4d)
-  );
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #00838d), color-stop(20%, white), color-stop(40%, #4d4d4d));
   background: linear-gradient(to right, #00838d 0, white 20%, #4d4d4d 40%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 1.5s infinite linear;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 600;
   font-size: 16px;
@@ -490,10 +559,14 @@ button a::after {
   border: 1px solid white;
   border-radius: 50%;
   position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnim 0.5s infinite alternate;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation: cursorAnim 0.5s infinite alternate;
+          animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
+  z-index: 45;
 }
 
 .cursor::after {
@@ -506,41 +579,15 @@ button a::after {
   opacity: 0.5;
   top: -8px;
   left: -8px;
-  animation: cursorAnim2 0.5s infinite alternate;
-}
-
-@keyframes cursorAnim {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.7);
-  }
-}
-
-@keyframes cursorAnim2 {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.4);
-  }
-}
-
-@keyframes cursorAnim3 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
+  -webkit-animation: cursorAnim2 0.5s infinite alternate;
+          animation: cursorAnim2 0.5s infinite alternate;
+  z-index: 45;
 }
 
 .expand {
-  animation: cursorAnim3 0.5s forwards;
-  border: 1px solid red;
+  -webkit-animation: cursorAnim3 0.5s forwards;
+          animation: cursorAnim3 0.5s forwards;
+  border: 1px solid #bb86fc;
+  z-index: 45;
 }
+/*# sourceMappingURL=style.css.map */

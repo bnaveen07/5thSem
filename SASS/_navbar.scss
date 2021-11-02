@@ -3,7 +3,6 @@ nav {
   height: 4rem;
   width: 100vw;
   font-weight: 500;
-  font-family: "DotGothic16", sans-serif;
 }
 
 .home {
@@ -35,11 +34,20 @@ nav {
 
 /*Styling logo*/
 .logo {
-  width: 10rem;
+  width: 11.5rem;
   padding: 1vh 1vw;
   text-align: center;
-  white-space: nowrap;
+  //white-space: nowrap;
   color: #bb86fc;
+  border-right: 2px solid rgba(255, 255, 255, 0.61);
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: typewriter 4s steps(20) 0s 1 normal both,
+    blinkTextCursor 500ms steps(20) 1 normal;
+  -webkit-animation: typewriter 4s steps(20) 0s 1 normal both,
+    blinkTextCursor 500ms steps(20) 1 normal;
 }
 
 /*Styling Links*/
