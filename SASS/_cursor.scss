@@ -22,9 +22,11 @@
   top: -8px;
   left: -8px;
   animation: cursorAnim2 0.5s infinite alternate;
+  z-index: 45;
 }
 
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid #bb86fc;
+  z-index: 45;
 }
