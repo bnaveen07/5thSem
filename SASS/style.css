@@ -590,4 +590,29 @@ button a::after {
   border: 1px solid #bb86fc;
   z-index: 45;
 }
+
+.counter {
+  margin: 0px auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 133px;
+  background: #746dba;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.text {
+  padding: 10px 0 0 0;
+  display: inline-block;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
