@@ -594,7 +594,7 @@ button a::after {
 .counter {
   margin: 0px auto;
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   width: 133px;
   background: #746dba;
   text-align: left;
