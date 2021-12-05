@@ -35,7 +35,7 @@
     document.addEventListener("adobe_dc_view_sdk.ready", function () {
       var adobeDCView = new AdobeDC.View({ clientId: "96ef02979dfe4347be995041d91b1945" });
       adobeDCView.previewFile({
-        content: { location: { url: "./complete.pdf" } },
+        content: { location: { url: "./complete.PDF" } },
         metaData: { fileName: "Complete" }
       }, { embedMode: "LIGHT_BOX", dockPageControls: false, showDownloadPDF: false, exitPDFViewerType: "RETURN" });
     });
