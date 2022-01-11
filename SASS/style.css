@@ -209,6 +209,10 @@ nav {
   color: #03dac5;
 }
 
+nav {
+  position: relative;
+}
+
 .navbar {
   height: 4rem;
   width: 100vw;
@@ -614,5 +618,77 @@ button a::after {
   color: #ffffff;
   width: 100%;
   text-align: center;
+}
+
+.syllabus {
+  height: 50px;
+  font-size: 1.2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background-color: inherit;
+  left: 0;
+}
+
+.syllabus_link {
+  color: #bb86fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close-button {
+  width: 25px;
+  height: 25px;
+  -webkit-box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  right: 15px;
+  top: 5px;
+  position: absolute;
+  display: block;
+  z-index: 200;
+  text-indent: -9999px;
+}
+
+.close-button:before,
+.close-button:after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.close-button:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.close-button:hover:before {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.close-button:hover:after {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}
+
+.close-button:active {
+  -webkit-box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+  background-color: #bb86fc;
 }
 /*# sourceMappingURL=style.css.map */

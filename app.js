@@ -20,6 +20,13 @@ window.addEventListener('beforeinstallprompt', function (event) {
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
+const close = document.querySelector(".close-button");
+const syllabus = document.querySelector(".syllabus");
+
+
+close.addEventListener('click', () => {
+  syllabus.style.display = "none";
+})
 
 hamburger.addEventListener('click', () => {
   //Animate Links

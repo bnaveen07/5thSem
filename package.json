@@ -1,23 +1,29 @@
 {
-  "name": "ece dsce",
+  "name": "5thsem",
   "version": "1.0.0",
-  "description": "Website to access to all study materials at one place. DSCE",
-  "main": "index.html",
+  "description": "A Simple website to access all pdf at one place (4th Sem | ECE)",
+  "main": "app.js",
   "scripts": {
-    "start": "http-server -c-1"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveenbasireddy/5thSem.git"
   },
   "keywords": [
-    "pwa",
-    "progressive",
-    "web",
-    "app",
     "HTML",
     "CSS",
-    "Javascript"
+    "SCSS",
+    "Manifest.json",
+    "serviceworker.js"
   ],
   "author": "Naveen Kumar",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveenbasireddy/5thSem/issues"
+  },
+  "homepage": "https://github.com/naveenbasireddy/5thSem#readme",
   "dependencies": {
-    "autoprefixer": "^10.3.6"
+    "node-sass": "^7.0.1"
   }
 }
