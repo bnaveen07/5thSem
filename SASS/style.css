@@ -626,7 +626,7 @@ button a::after {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  margin-left: 10px;
+  padding-left: 10px;
   z-index: 2000;
   background-color: inherit;
   display: -webkit-box;
