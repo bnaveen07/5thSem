@@ -37,7 +37,11 @@
       adobeDCView.previewFile({
         content: { location: { url: "./iir_filter.pdf" } },
         metaData: { fileName: "IIR Filter" }
-      }, { embedMode: "LIGHT_BOX", dockPageControls: false, showDownloadPDF: false, exitPDFViewerType: "RETURN" });
+      }, {
+        showLeftHandPanel: false, dockPageControls: false, showDownloadPDF: false,
+        showPrintPDF: false
+        , exitPDFViewerType: "RETURN"
+      });
     });
   </script>
   <script src="../app.js"></script>
