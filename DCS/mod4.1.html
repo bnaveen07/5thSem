@@ -37,11 +37,7 @@
       adobeDCView.previewFile({
         content: { location: { url: "./mod4.1.pdf" } },
         metaData: { fileName: "Module 4 A" }
-      }, {
-        showLeftHandPanel: false, dockPageControls: false, showDownloadPDF: false,
-        showPrintPDF: false
-        , exitPDFViewerType: "RETURN"
-      });
+      }, { embedMode: "LIGHT_BOX", dockPageControls: false, showPrintPDF: true, showDownloadPDF: false, exitPDFViewerType: "RETURN" });
     });
   </script>
   <script src="../app.js"></script>

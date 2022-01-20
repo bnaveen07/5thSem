@@ -37,11 +37,7 @@
       adobeDCView.previewFile({
         content: { location: { url: "./mod5.b.pdf" } },
         metaData: { fileName: "Module 5 B" }
-      }, {
-        showLeftHandPanel: false, dockPageControls: false, showDownloadPDF: false,
-        showPrintPDF: false
-        , exitPDFViewerType: "RETURN"
-      });
+      }, { embedMode: "LIGHT_BOX", dockPageControls: false, showDownloadPDF: false, exitPDFViewerType: "RETURN" });
     });
   </script>
   <script src="../app.js"></script>
