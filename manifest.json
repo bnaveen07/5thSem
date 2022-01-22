@@ -5,7 +5,7 @@
   "scope": "/",
   "orientation": "portrait",
   "start_url": "./index.html",
-  "background_color": "#fff",
+  "background_color": "#6867AC",
   "theme_color": "#3f51b5",
   "description": "A Simple website to access PDFs of 5th Sem of DSCE.",
   "dir": "ltr",
