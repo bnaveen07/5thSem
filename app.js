@@ -10,9 +10,6 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-$(window).on("load", function () {
-  $(".loader-wrapper").fadeOut("slow");
-});
 
 window.addEventListener('beforeinstallprompt', function (event) {
   event.preventDefault();
