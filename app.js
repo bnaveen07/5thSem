@@ -24,12 +24,17 @@ const links = document.querySelectorAll(".nav-links li");
 const close = document.querySelector(".close-button");
 const syllabus = document.querySelector(".syllabus");
 
-window.onwheel = e => {
-  if (e.deltaY >= 0) {
-    // Scrolling Down with mouse
+
+syllabus.addEventListener("click", () => {
+  syllabus.style.display = "none";
+});
+
+window.onscroll = e => {
+
+  if (window.scrollY > 0) {
     syllabus.style.display = "none";
-  } else {
-    // Scrolling Up with mouse
+  }
+  else {
     syllabus.style.display = "flex";
   }
 }
