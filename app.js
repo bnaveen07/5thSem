@@ -24,10 +24,15 @@ const links = document.querySelectorAll(".nav-links li");
 const close = document.querySelector(".close-button");
 const syllabus = document.querySelector(".syllabus");
 
-
-close.addEventListener('click', () => {
-  syllabus.style.display = "none";
-})
+window.onwheel = e => {
+  if (e.deltaY >= 0) {
+    // Scrolling Down with mouse
+    syllabus.style.display = "none";
+  } else {
+    // Scrolling Up with mouse
+    syllabus.style.display = "flex";
+  }
+}
 
 hamburger.addEventListener('click', () => {
   //Animate Links
