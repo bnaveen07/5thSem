@@ -4,7 +4,8 @@
   "description": "A Simple website to access all pdf at one place (4th Sem | ECE)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass — watch scss -o css"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,9 @@
     "url": "https://github.com/naveenbasireddy/5thSem/issues"
   },
   "homepage": "https://github.com/naveenbasireddy/5thSem#readme",
-  "dependencies": {
-    "node-sass": "^7.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.8"
   }
 }
